@@ -1,17 +1,20 @@
 
 package Processor;
 
+import java.util.LinkedList;
+
 public class Proces{
     public String name;
     public String alias;
     public int timeStart;
-    public int PHASES_COUNT;
+    public LinkedList<Phase> phases;
 
     public Proces(Proces p){
        this.name = p.name;
        this.alias = p.alias;
        this.timeStart = p.timeStart;
-       this.PHASES_COUNT = p.PHASES_COUNT;
+       for(int i=0;i< p.phases.size(); i++)
+           this.phases.add(p.phases.get(i));
     }
 
     public Proces() {
@@ -30,6 +33,16 @@ public class Proces{
             }   
         
         return processes;
+    }
+    
+    @Override
+    public String toString(){
+        System.out.println("Name:" + this.name);
+        System.out.println("alias:" + this.name);
+        System.out.println("timeStart:" + this.name);
+        for(int i=0; i< this.phases.size(); i++)
+            System.out.println(this.phases.get(i));
+        return "";
     }
    
 }
