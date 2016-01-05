@@ -1,4 +1,4 @@
-q1=2 q2=5 q3=10 k=5 r=2  
+q1=2 q2=5 q3=10 k=5 r=2 nr_procese=5  
 
 Process 1 name=my_proc start_time=0    
 Phase 1 CPU=5 I/O=7 REPEAT=10  

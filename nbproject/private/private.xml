@@ -3,11 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/mircea.pavileanu/Documents/NetBeansProjects/FakeProcessor/src/Processor/Proces.java</file>
-            <file>file:/C:/Users/mircea.pavileanu/Documents/NetBeansProjects/FakeProcessor/src/Processor/InputReader.java</file>
-            <file>file:/C:/Users/mircea.pavileanu/Documents/NetBeansProjects/FakeProcessor/src/Main.java</file>
-            <file>file:/C:/Users/mircea.pavileanu/Documents/NetBeansProjects/FakeProcessor/src/Processor/ProcessorQueue.java</file>
-            <file>file:/C:/Users/mircea.pavileanu/Documents/NetBeansProjects/FakeProcessor/src/Processor/Phase.java</file>
+            <file>file:/C:/Users/Mircea/Desktop/FakeProcess/src/Processor/Phase.java</file>
+            <file>file:/C:/Users/Mircea/Desktop/FakeProcess/src/Processor/ProcessorQueue.java</file>
+            <file>file:/C:/Users/Mircea/Desktop/FakeProcess/src/Processor/WorkPlace.java</file>
+            <file>file:/C:/Users/Mircea/Desktop/FakeProcess/src/Processor/Proces.java</file>
+            <file>file:/C:/Users/Mircea/Desktop/FakeProcess/src/Main.java</file>
         </group>
     </open-files>
 </project-private>

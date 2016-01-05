@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class InputReader {
+public class WorkPlace {
     
     public static Proces[] procs;
     public static ProcessorQueue<Proces> que1;
@@ -12,13 +12,11 @@ public class InputReader {
     public static ProcessorQueue<Proces> que3;
     public static int k;
     public static int r;
-    
-    
+       
     
     public static void readInputFile(File f) throws FileNotFoundException{
         Scanner sc = new Scanner(f);
-        
-        procs = new Proces[50];
+              
         que1 = new ProcessorQueue<Proces>(); 
         que2 = new ProcessorQueue<Proces>();
         que3 = new ProcessorQueue<Proces>();
@@ -34,6 +32,10 @@ public class InputReader {
                 else if(line[j].indexOf("q3=") >= 0) que3.timeUnits = Integer.parseInt(line[j].substring(line[j].indexOf("=")+1));
                 else if(line[j].indexOf("k=") >= 0) k = Integer.parseInt(line[j].substring(line[j].indexOf("=")+1));
                 else if(line[j].indexOf("r=") >= 0) r = Integer.parseInt(line[j].substring(line[j].indexOf("=")+1));
+                else if(line[j].indexOf("nr_procese=") >= 0){
+                    int nr_procese = Integer.parseInt(line[j].substring(line[j].indexOf("=")+1));
+                    procs = new Proces[nr_procese];
+                }
             }
         }
         
@@ -61,5 +63,15 @@ public class InputReader {
             }
         }
        
+    }
+    
+    
+    public static void execute(){
+        // ADAUGAM TOATE PROCESELE IN PRIMA COADA IN ORDINE ALIAS-ULUI.        
+        for(int i=0; i<procs.length; i++){
+            que1.add(procs[i]);
+        }
+        
+        
     }
 }

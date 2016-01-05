@@ -38,10 +38,12 @@ public class Proces{
     @Override
     public String toString(){
         System.out.println("Name:" + this.name);
-        System.out.println("alias:" + this.name);
-        System.out.println("timeStart:" + this.name);
+        System.out.println("alias:" + this.alias);
+        System.out.println("timeStart:" + this.timeStart);
+        System.out.println("----------------");
         for(int i=0; i< this.phases.size(); i++)
             System.out.println(this.phases.get(i));
+        System.out.println("----------------");
         return "";
     }
    
